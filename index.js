@@ -4,7 +4,9 @@ const rosa = document.getElementById("rosa")
 const amarillo = document.getElementById("amarillo")
 const azul = document.getElementById("azul")
 const canvas = document.getElementById("canvas")
-
+const pdf = document.getElementById("pdf")
+let numeroinicial = 1
+let numerofinal = 12
 
 const cambiaValores =(operacion)=>{
     const nodos=document.getElementsByClassName("numero")
@@ -22,6 +24,7 @@ const cambiaValores =(operacion)=>{
 }
 
 
+
 sumar.addEventListener("click", ()=>{
     cambiaValores("mas") 
 })
@@ -29,11 +32,11 @@ resta.addEventListener("click", ()=>{
     cambiaValores() 
 })
 rosa.addEventListener("click", ()=>{
-    canvas.style.backgroundImage = "url('./3.png')";
+    imagen.src = "./3.png";
 })
 amarillo.addEventListener("click", ()=>{
-    canvas.style.backgroundImage = "url('./1.png')";
+    imagen.src = "./1.png";
 })
 azul.addEventListener("click", ()=>{
-    canvas.style.backgroundImage = "url('./2.png')";
+    imagen.src = "./2.png";
 })
