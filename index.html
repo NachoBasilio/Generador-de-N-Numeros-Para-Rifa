@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>Document</title>
+    <title>Trini es la mejor</title>
 </head>
 <body>
     <style>
@@ -170,8 +171,59 @@
     <button id="rosa">Rosa</button>
     <button id="azul">Azul</button>
     <button id="pdf">PDF</button>
+    <div id="NumeroDePagina">Numero de pagina: 1</div>
     <script>
-        
+        const sumar = document.getElementById("sumar")
+const resta = document.getElementById("resta")
+const rosa = document.getElementById("rosa")
+const amarillo = document.getElementById("amarillo")
+const azul = document.getElementById("azul")
+const canvas = document.getElementById("canvas")
+const pdf = document.getElementById("pdf")
+const NumeroDePagina = document.getElementById("NumeroDePagina")
+let nDePagina = 1
+let numeroinicial = 1
+let numerofinal = 12
+
+const cambiaValores =(operacion)=>{
+    const nodos=document.getElementsByClassName("numero")
+    
+    const nodosArray = Array.from(nodos)
+    if(operacion == "mas"){
+        nDePagina += 1
+        NumeroDePagina.innerText = "Numero de pagina: " + nDePagina
+        nodosArray.map((ele)=>{
+            return ele.innerText = parseInt(ele.innerText) + 12
+        })
+    }else{
+        nDePagina -= 1
+        NumeroDePagina.innerText = "Numero de pagina: " + nDePagina
+        nodosArray.map((ele)=>{
+            return ele.innerText = parseInt(ele.innerText) - 12
+        })
+    }
+    
+    
+}
+
+
+
+sumar.addEventListener("click", ()=>{
+    cambiaValores("mas") 
+})
+resta.addEventListener("click", ()=>{
+    cambiaValores() 
+})
+rosa.addEventListener("click", ()=>{
+    imagen.src = "./3.png";
+})
+amarillo.addEventListener("click", ()=>{
+    imagen.src = "./1.png";
+})
+azul.addEventListener("click", ()=>{
+    imagen.src = "./2.png";
+})
+
         pdf.addEventListener("click", (e)=>{
         let doc = new jspdf.jsPDF("p", "mm", [297, 210])
         let margin = 0
@@ -180,7 +232,7 @@
         x:margin,
         y:margin,
         html2canvas: {
-            scale: scale
+            scale: scale 
         },
         callback: function(doc){
             doc.output("dataurlnewwindow", {filename: "tarjetas.pdf"})
@@ -188,6 +240,6 @@
     })
 })
     </script>
-    <script src="./index.js"></script>
+
 </body>
 </html>

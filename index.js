@@ -5,11 +5,15 @@ const amarillo = document.getElementById("amarillo")
 const azul = document.getElementById("azul")
 const canvas = document.getElementById("canvas")
 const pdf = document.getElementById("pdf")
+const NumeroDePagina = document.getElementById("NumeroDePagina")
+let nDePagina = 1
 let numeroinicial = 1
 let numerofinal = 12
 
 const cambiaValores =(operacion)=>{
     const nodos=document.getElementsByClassName("numero")
+    nDePagina += 1
+    NumeroDePagina.innerText = "Numero de pagina: " + nDePagina
     const nodosArray = Array.from(nodos)
     if(operacion == "mas"){
         nodosArray.map((ele)=>{
@@ -20,7 +24,8 @@ const cambiaValores =(operacion)=>{
             return ele.innerText = parseInt(ele.innerText) - 12
         })
     }
-
+    
+    
 }
 
 
