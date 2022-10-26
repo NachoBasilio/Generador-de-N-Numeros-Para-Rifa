@@ -1,0 +1,14 @@
+#canvas{
+    width: 595px;
+    height: 842px;
+    background-image: url("./1.png");
+    position: relative;
+}
+.numero{
+    position: absolute;
+}
+
+#n1{
+    right: 0px;
+    bottom: 0px;
+}
