@@ -8,100 +8,119 @@
     position: absolute;
 }
 
+/* Primeros 8 */
 #n1{
-    right: 510px;
+    right: 497px;
     bottom: 631px;
 }
 #n2{
-    right: 490px;
+    right: 477px;
     bottom: 562px;
 }
+
 #n3{
-    right: 366px;
+    right: 353px;
     bottom: 631px;
 }
 #n4{
-    right: 344px;
+    right: 331px;
     bottom: 562px;
 }
 
 #n5{
-    right: 222px;
+    right: 209px;
     bottom: 631px;
 }
 #n6{
-    right: 198px;
+    right: 185px;
     bottom: 562px;
 }
+
 #n7{
-    right: 78px;
+    right: 65px;
     bottom: 631px;
 }
 #n8{
-    right: 52px;
+    right: 39px;
     bottom: 562px;
 }
+
+/* Primeros 8 */
+/* Segundos 8 */
+
 #n9{
-    right: 510px;
+    right: 497px;
     bottom: 355px;
 }
 #n10{
-    right: 490px;
+    right: 477px;
     bottom: 287px;
 }
+
 #n11{
-    right: 366px;
+    right: 353px;
     bottom: 355px;
 }
 #n12{
-    right: 344px;
+    right: 331px;
     bottom: 287px;
 }
+
 #n13{
-    right: 222px;
+    right: 209px;
     bottom: 355px;
 }
 #n14{
-    right: 198px;
+    right: 185px;
     bottom: 287px;
 }
+
 #n15{
-    right: 78px;
+    right: 65px;
     bottom: 355px;
 }
 #n16{
-    right: 52px;
+    right: 39px;
     bottom: 287px;
 }
+
+/* Segundos 8 */
+/* Terceros 8 */
+
 #n17{
-    right: 510px;
+    right: 497px;
     bottom: 79px;
 }
 #n18{
-    right: 490px;
-    bottom: 12px;
+    right: 477px;
+    bottom: 10px;
 }
+
 #n19{
-    right: 361px;
+    right: 353px;
     bottom: 79px;
 }
 #n20{
-    right: 340px;
+    right: 331px;
     bottom: 10px;
 }
+
 #n21{
-    right: 214px;
+    right: 209px;
     bottom: 79px;
 }
 #n22{
-    right: 195px;
+    right: 185px;
     bottom: 10px;
 }
+
 #n23{
-    right: 73px;
+    right: 65px;
     bottom: 78px;
 }
 #n24{
-    right: 47px;
+    right: 39px;
     bottom: 10px;
 }
+
+/* Terceros 8 */
